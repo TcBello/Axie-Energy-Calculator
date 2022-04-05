@@ -1,38 +1,134 @@
+button{
+  border-radius: 10px;
+}
+
 .App {
   text-align: center;
+  background-image: url("https://wallpapercave.com/wp/wp9583802.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* APP TITLE */
+.App #app-title{
+  color: white;
+  margin-top: 4%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* BLOODMOON TITLE */
+.App #bloodmoon-title{
+  color: red;
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* CONTENT CONTAINER */
+#content-container{
+  color: white;
+  width: 30%;
+  height: 50%;
+  background-color: orange;
+  opacity: 0.8;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* SIDE BUTTON CONTAINER */
+#content-container #side-button-container{
+  position: absolute;
+  left: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* RESET BUTTON */
+#content-container #reset-button{
   color: white;
+  background-color: darkred;
+  border-color: red;
+  border-width: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  align-self: start;
 }
 
-.App-link {
-  color: #61dafb;
+/* UNDO BUTTON */
+#content-container #undo-button{
+  color: white;
+  background-color: rosybrown;
+  border-color: brown;
+  border-width: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  align-self: start;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ROUND COUNT */
+#content-container #round-count{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 30px 0px 0px 0px;
+}
+
+/* ENERGY COUNT */
+#content-container #energy-count{
+  font-weight: bold;
+  font-size: 80px;
+  margin: 0px 0px 20px 0px;
+}
+
+/* COUNT BUTTON CONTAINER */
+#content-container #count-button-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 30px 0px;
+}
+
+/* INCREMENT BUTTON */
+#count-button-container #button-increment{
+  color: white;
+  background-color: darkblue;
+  border-color: blue;
+  border-width: 5px;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* DECREMENT-BUTTON */
+#count-button-container #button-decrement{
+  color: white;
+  background-color: darkred;
+  border-color: red;
+  border-width: 5px;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* END TURN BUTTON */
+#content-container #end-turn-button{
+  color: white;
+  background-color: darkviolet;
+  border-color: pink;
+  border-width: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
 }
